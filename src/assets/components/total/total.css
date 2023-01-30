@@ -1,0 +1,32 @@
+@import url("../../styles/reset.css");
+@import url("../../styles/global.css");
+
+.total {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  padding: 1rem;
+  border: 1px solid var(--grey-2);
+  gap: 20px;
+  margin-bottom: 2rem;
+}
+
+.total > div {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.total > div > span {
+  font-weight: 700;
+}
+
+.positivo {
+  color: var(--color-secundary);
+}
+
+.negativo {
+  color: var(--color-primary2);
+}

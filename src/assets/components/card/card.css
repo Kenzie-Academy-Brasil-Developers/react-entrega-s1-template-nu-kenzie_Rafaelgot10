@@ -1,0 +1,93 @@
+@import url("../../styles/reset.css");
+@import url("../../styles/global.css");
+
+.cardEntrada {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  border-radius: 10px;
+  border-left: 5px solid var(--color-secundary);
+  padding: 1rem;
+  background-color: var(--grey-1);
+  margin-bottom: 1rem;
+  transition: 1s;
+}
+
+.cardEntrada:hover {
+  background-color: var(--grey-2);
+}
+
+.descricao {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  gap: 20px;
+}
+
+svg {
+  cursor: pointer;
+}
+.valor {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  gap: 20px;
+}
+
+.cardDespesa {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  border-radius: 10px;
+  border-left: 5px solid var(--grey-2);
+  padding: 1rem;
+  background-color: var(--grey-1);
+  margin-bottom: 1rem;
+  transition: 1s;
+}
+
+.cardDespesa:hover {
+  background-color: var(--grey-2);
+  border-left: 5px solid var(--grey-3);
+}
+
+.cardDespesa > div > h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.cardEntrada > div > h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+@media (min-width: 770px) {
+  .cardDespesa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+  }
+
+  .descricao {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .valor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cardEntrada {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+  }
+}

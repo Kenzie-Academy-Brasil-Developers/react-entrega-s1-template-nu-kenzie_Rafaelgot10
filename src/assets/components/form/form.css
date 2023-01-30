@@ -1,0 +1,99 @@
+@import url("../../styles/reset.css");
+@import url("../../styles/global.css");
+form {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px var(--grey-2);
+  padding: 1rem;
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 2rem;
+}
+
+form > label {
+  margin-top: 2rem;
+  color: var(--grey-4);
+  margin-bottom: 1rem;
+}
+
+form > input {
+  padding: 1rem;
+  background-color: var(--grey-1);
+  border: none;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  border: 2px solid var(--grey-1);
+  transition: 1s;
+}
+
+form > input:hover {
+  border: 2px solid var(--grey-4);
+}
+
+form > input::placeholder {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+form > span {
+  font-size: 0.75rem;
+  color: var(--grey-3);
+  margin-bottom: 1rem;
+}
+
+form > button:hover {
+  background-color: var(--color-primary2);
+}
+
+.valores {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.valores > div {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 45%;
+  gap: 10px;
+}
+
+.valores > div > input {
+  padding: 1rem;
+  background-color: var(--grey-1);
+  border: none;
+  border-radius: 5px;
+  border: 2px solid var(--grey-1);
+  transition: 1s;
+}
+
+.valores > div > input:hover {
+  border: 2px solid var(--grey-4);
+}
+
+.valores > div > select {
+  padding: 1rem;
+  background-color: var(--grey-1);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid var(--grey-1);
+  transition: 1s;
+}
+
+.valores > div > select:hover {
+  border: 2px solid var(--grey-4);
+}
+
+form > button {
+  background-color: var(--color-primary);
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 0;
+  color: var(--grey-1);
+  margin-top: 1rem;
+  transition: 1s;
+}
